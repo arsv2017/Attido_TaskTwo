@@ -26,10 +26,10 @@ public class MainApp {
         }
 
     }
-        public static void salaryIncrease (DataBase db,int salaryIncreaseFrom, int salaryIncreaseTo, double factor){
+        public static void salaryIncrease (DataBase db,int salaryRangeFrom, int salaryRangeTo, double factor){
 
             for (Employee emp : db.getEmployeeDataBase())
-                if (emp.getTaxeableSalary() >= salaryIncreaseFrom && emp.getTaxeableSalary() <= salaryIncreaseTo) {
+                if (emp.getTaxeableSalary() > salaryRangeFrom && emp.getTaxeableSalary() < salaryRangeTo) {
                     emp.increaseSalary(factor);
 
 
