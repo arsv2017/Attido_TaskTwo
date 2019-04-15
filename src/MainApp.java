@@ -19,7 +19,7 @@ public class MainApp {
 
            salaryIncrease(db, 0, 3000, 1.5);
 
-        System.out.println("After promotion:!");
+        System.out.println("After promotion:");
         for (Employee emp : db.getEmployees()) {
 
             System.out.println(emp.toString());
