@@ -56,8 +56,6 @@ public class Employee {
 
         for (i = factor; i >= 1 && (oldSalary * (i - 1)) >= oldTax; i = i - factorDecrementStep) ;
 
-        System.out.println("Salary increase factor is " + i);
-        System.out.println("Salary increase: " + (int) (oldSalary * (i - 1)) + " old taxes: " + oldTax);
         setSalary((int) (oldSalary * i));
     }
 
